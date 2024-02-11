@@ -3,7 +3,7 @@
   import { route } from "$lib/ROUTES";
 </script>
 
-<h1>Defi 03</h1>
+<h1>Defi 03 (Tic-Tac-Toe)</h1>
 
 <div style="width: 400px; margin-left: auto; margin-right: auto;">
   Prochain joueur : {$page.url.searchParams.get("joueur") ?? "0"}
