@@ -1,5 +1,6 @@
 <script lang="ts">
-  import mousePosition from "$lib/mousePosition";
+  import { page } from "$app/stores";
+  import { route } from "$lib/ROUTES";
 </script>
 
 <svelte:head>
@@ -7,8 +8,14 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css"
   />
-  <title>FR Defi 01</title>
+  <title>FR Defis</title>
 </svelte:head>
+
+<a href={route("/")}>Accueil</a> |
+<a href={route("/001")}>Defi 1</a> |
+<a href={route("/003")}>Defi 3</a>
+
+<hr />
 
 <slot />
 
