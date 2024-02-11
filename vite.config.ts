@@ -6,6 +6,7 @@ import { kitRoutes } from "vite-plugin-kit-routes";
 export default defineConfig({
   plugins: [
     kitRoutes<KIT_ROUTES>({
+      path_base: true,
       // Conf
       PAGES: {
         "/003": {
